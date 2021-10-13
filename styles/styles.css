@@ -232,3 +232,230 @@ body {
   border: 1px solid #242539;
   box-sizing: border-box;
 }
+.travel {
+  display: flex;
+  flex-direction: row;
+  height: 785px;
+  width: 1920px;
+  background-color: #242539;
+  color: #ffffff;
+}
+.travel .travelWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 375px;
+}
+.travel .travelWrapper .travelHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  margin-top: 191px;
+}
+.travel .travelWrapper .travelHeader p {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-left: 20px;
+  height: 17px;
+  width: 167px;
+  font-size: 14px;
+  line-height: 17px;
+  font-style: normal;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.travel .travelWrapper .travelHeader .travelHeaderLine {
+  width: 50px;
+  height: 1px;
+  background-color: #ED2985;
+}
+.travel .travelWrapper h2 {
+  z-index: 10;
+  font-size: 70px;
+  width: 664px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 85.33px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-bottom: 30px;
+}
+.travel .travelWrapper p {
+  width: 632px;
+  height: 116px;
+  font-size: 18px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  z-index: 10;
+  margin-bottom: 60px;
+}
+.travel .travelWrapper a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 55px;
+  width: 258px;
+  text-align: center;
+  mix-blend-mode: normal;
+  border: 1px solid #3E3F51;
+  box-sizing: border-box;
+}
+.travel .travelBG {
+  position: absolute;
+  left: 875px;
+  width: 1045px;
+  height: 785px;
+  z-index: 1;
+}
+.partners {
+  display: flex;
+  flex-direction: column;
+  height: 725px;
+  width: 1920px;
+}
+.partners .partnersHeader {
+  font-size: 70px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 85px;
+  color: #242539;
+  width: 501px;
+  height: 170px;
+  padding-left: 376px;
+  padding-top: 160px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-bottom: 132px;
+}
+.partners .partnersLogos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 376px;
+}
+.partners .partnersLogos .partnersLogosImg {
+  margin-right: 130px;
+}
+.partners .partnersLogos .partnersLogos1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.partners .partnersLogos .partnersLogos2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.clients {
+  display: flex;
+  flex-direction: column;
+  height: 1000px;
+  width: 1920px;
+  background-color: #F3F3F5;
+}
+.clients .clientHeader {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  font-size: 70px;
+  color: #242539;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 85px;
+  margin-left: 375px;
+  margin-top: 160px;
+  margin-bottom: 160px;
+}
+.clients .clientContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 375px;
+  margin-bottom: 171px;
+}
+.clients .clientContent .clientContentWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 241px;
+}
+.clients .clientContent .clientContentWrapper .clientInfo {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+}
+.clients .clientContent .clientContentWrapper .clientInfo h3 {
+  width: 127px;
+  height: 26px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+}
+.clients .clientContent .clientContentWrapper .clientInfo p {
+  width: 129px;
+  height: 26px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+}
+.clients .clientContent p {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  width: 800px;
+  height: 220px;
+  color: #242539;
+  font-size: 26px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 44px;
+}
+.clients .clientContent h3 {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+.clients .clientsNav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.clients .clientsNav .clientNavPointers button {
+  border: none;
+  padding: 0px;
+  width: 69px;
+  height: 69px;
+  margin-left: 15px;
+}
+.clients .clientsNav .clientNavRectangles {
+  display: flex;
+  flex-direction: row;
+  margin-left: 72px;
+}
+.clients .clientsNav .clientNavRectangles .rectangle {
+  width: 29px;
+  height: 3px;
+  background-color: #DADADA;
+  margin-right: 13px;
+}
+.clients .clientsNav .clientNavRectangles .active {
+  background-color: #ED2985;
+}
+/*
+//Something for mobile adjust
+@media (max-width:700px) {
+    .travel{
+        height: 2000px;
+        display: block;
+    }
+    .travelWrapper{
+        display: block;
+    }
+    .partnersLogos{
+        flex-wrap: wrap;
+        width: 700px;
+        row-gap: 20px;
+    }
+}
+*/

@@ -4,7 +4,7 @@ body {
 }
 .start {
   width: 100%;
-  background: url(/images/start\ background.png);
+  background: url(../images/start\ background.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -203,7 +203,6 @@ body {
   font-weight: normal;
   font-size: 70px;
   line-height: 85px;
-  width: 748px;
   margin: 0px;
   margin-bottom: 45px;
 }
@@ -348,7 +347,7 @@ body {
   position: absolute;
   right: 0px;
   transform: translate(0%, -100%);
-  background: url(/images/travelBG.png);
+  background: url(../images/travelBG.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center 0;
@@ -366,7 +365,6 @@ body {
   font-size: 70px;
   font-style: normal;
   font-weight: normal;
-  align-self: start;
   line-height: 85px;
   color: #242539;
   margin-block-start: 0px;
@@ -646,12 +644,11 @@ body {
 .services .servicesWrapper .servicesContent .servicesContentExample .servicesActiveImg {
   position: relative;
   left: 462px;
-  bottom: 300px;
+  bottom: 650px;
 }
 .services .servicesWrapper .servicesContent .servicesContentExample .servicesActiveContent {
   position: relative;
-  left: 812px;
-  bottom: 762px;
+  left: 762px;
   z-index: 10;
   margin-block-start: 0px;
   margin-block-end: 0px;
@@ -661,7 +658,6 @@ body {
   padding-top: 64px;
   padding-bottom: 64px;
   width: 283px;
-  height: 232px;
   font-size: 18px;
   line-height: 29px;
   color: #242539;
@@ -874,7 +870,8 @@ body {
   background-color: #ED2985;
 }
 .footer .footerContent .footerContentWrapper .footerNav .navsWrapper .socialLinksContainer {
-  bottom: 0;
+  right: 0px;
+  bottom: 0px;
   position: absolute;
 }
 .footer .footerContent .footerContentWrapper .footerNav .navsWrapper .socialLinksContainer .socialLink {
@@ -964,7 +961,7 @@ body {
 }
 .footer .footerContent .footerContentWrapper .latestInBlog .latestSlider .SliderButtonLeft {
   left: 0;
-  background-image: url(/images/pointers/arrowLeft.png);
+  background-image: url(../images/pointers/arrowLeft.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #121221;
@@ -977,7 +974,7 @@ body {
 }
 .footer .footerContent .footerContentWrapper .latestInBlog .latestSlider .SliderButtonRight {
   left: 0;
-  background-image: url(/images/pointers/arrowRight.png);
+  background-image: url(../images/pointers/arrowRight.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #121221;
@@ -987,6 +984,20 @@ body {
   border: 1px solid transparent;
   margin-left: 47px;
   cursor: pointer;
+}
+.footer .footerContent .footerContentWrapper .NavRectangles {
+  display: none;
+  flex-direction: row;
+  margin-left: 72px;
+}
+.footer .footerContent .footerContentWrapper .NavRectangles .rectangle {
+  width: 29px;
+  height: 3px;
+  background-color: #DADADA;
+  margin-right: 13px;
+}
+.footer .footerContent .footerContentWrapper .NavRectangles .active {
+  background-color: #ED2985;
 }
 .Copyright {
   color: #676774;
@@ -1006,6 +1017,9 @@ body {
   }
   .start .topnav .topnavWrapper .logo img {
     width: 65px;
+  }
+  .start .topnav .topnavWrapper .logo p {
+    margin-right: 20px;
   }
   .start .topnav .topnavWrapper .navLinks {
     justify-content: space-between;
@@ -1144,7 +1158,7 @@ body {
   .services .servicesWrapper {
     width: 700px;
     padding: 70px 10px;
-    height: 600px;
+    height: 500px;
   }
   .services .servicesWrapper h2 {
     font-size: 50px;
@@ -1157,11 +1171,14 @@ body {
   .services .servicesWrapper .servicesContent .servicesContentExample .servicesActiveImg {
     height: 500px;
     left: 290px;
-    bottom: 200px;
+    bottom: 500px;
   }
   .services .servicesWrapper .servicesContent .servicesContentExample .servicesActiveContent {
-    left: 390px;
-    bottom: 580px;
+    left: 490px;
+    bottom: 30px;
+    width: 200px;
+    font-size: 13px;
+    padding: 30px;
   }
   .services .servicesWrapper .servicesLink {
     margin-top: 25px;
@@ -1209,6 +1226,10 @@ body {
   .footer .footerContent .footerContentWrapper .footerNav .navsWrapper .socialLinksContainer {
     right: 0px;
   }
+  .footer .footerContent .footerContentWrapper .footerNav .navsWrapper .navMenu2 {
+    width: 210px;
+    margin-left: 10px;
+  }
   .footer .footerContent .footerContentWrapper .latestInBlog .latestSlider .blogCalendar {
     width: 350px;
   }
@@ -1221,6 +1242,370 @@ body {
     margin-right: 0px;
   }
   .footer .footerContent .footerContentWrapper .latestInBlog .latestSlider .SliderButtonRight {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 768px) {
+  .start .topnav {
+    height: 75px;
+  }
+  .start .topnav .topnavWrapper {
+    width: 100%;
+    padding-left: 20px;
+    height: 75px;
+  }
+  .start .topnav .topnavWrapper .navLinks {
+    display: none;
+  }
+  .start .topnav .topnavWrapper .mobileMenu {
+    display: flex;
+    position: absolute;
+    right: 40px;
+  }
+  .start .startContent {
+    height: auto;
+    padding: 65px 20px;
+    max-width: 540px;
+    width: auto;
+  }
+  .start .startContent h1 {
+    font-size: 27px;
+    line-height: 33px;
+  }
+  .start .startContent .startWrapper {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  .start .startContent .startWrapper p {
+    margin-right: 0px !important;
+    width: 335px;
+    height: auto;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .start .startContent .startWrapper a {
+    height: auto;
+  }
+  .asd .asdContainer {
+    width: auto;
+    max-width: 540px;
+    padding: 70px 20px;
+  }
+  .asd .asdContainer h2 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .asd .asdContainer .asdWrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .asd .asdContainer .asdWrapper .asdContent {
+    align-self: center;
+  }
+  .asd .asdContainer .asdWrapper .asdContent .asdSubContent {
+    margin-bottom: 35px;
+  }
+  .asd .asdContainer .asdWrapper .asdContent .asdSubContent p {
+    margin-left: 15px;
+    width: 250px;
+  }
+  .asd .asdContainer .asdWrapper .asdContent .asdSubContent h3 {
+    font-size: 30px;
+  }
+  .asd .asdContainer .asdWrapper .asdContent a {
+    margin-top: 15px;
+    margin-left: 0px;
+    align-self: center;
+  }
+  .asd .asdContainer .asdWrapper .asdImage {
+    height: 502px;
+    width: 335px;
+  }
+  .travel .travelWrapper {
+    width: auto;
+    max-width: 540px;
+    padding: 70px 20px;
+    flex-direction: column;
+  }
+  .travel .travelWrapper .travelContent {
+    padding: 20px 0px;
+  }
+  .travel .travelWrapper .travelContent h2 {
+    margin-top: 15px;
+    font-size: 40px;
+    line-height: 49px;
+    width: auto;
+  }
+  .travel .travelWrapper .travelContent .travelContext {
+    margin-bottom: 30px;
+    width: auto;
+  }
+  .travel .travelWrapper .travelContent .travelContext p {
+    font-size: 16px;
+    line-height: 27px;
+  }
+  .travel .travelBGWrapper {
+    position: static;
+    height: 500px;
+    width: 100%;
+    transform: translate(0%, 0%);
+  }
+  .partners .partnersWrapper {
+    max-width: 540px;
+    padding: 70px 20px;
+    width: auto;
+  }
+  .partners .partnersWrapper .partnersHeader {
+    font-size: 40px;
+    line-height: 49px;
+    margin-bottom: 45px;
+  }
+  .partners .partnersWrapper .partnersLogos {
+    flex-wrap: wrap;
+  }
+  .partners .partnersWrapper .partnersLogos .partnersLogosImg1 {
+    width: 154px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+  }
+  .partners .partnersWrapper .partnersLogos .partnersLogosImg2 {
+    width: 147px;
+    margin-bottom: 30px;
+  }
+  .partners .partnersWrapper .partnersLogos .partnersLogosImg3 {
+    width: 58px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+  }
+  .partners .partnersWrapper .partnersLogos .partnersLogosImg4 {
+    width: 234px;
+    margin-bottom: 30px;
+  }
+  .clients .clientsWrapper {
+    width: auto;
+    max-width: 540px;
+    padding: 70px 20px;
+  }
+  .clients .clientsWrapper .clientHeader {
+    font-size: 40px;
+    line-height: 49px;
+  }
+  .clients .clientsWrapper .clientNavPointers {
+    display: block;
+  }
+  .clients .clientsWrapper .clientNavPointers button {
+    width: 55px;
+    height: 55px;
+    margin: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .clients .clientsWrapper .clientsNav {
+    justify-content: start;
+  }
+  .clients .clientsWrapper .clientsNav .clientNavPointers {
+    display: none;
+  }
+  .clients .clientsWrapper .clientsNav .clientNavRectangles {
+    margin: 0px;
+  }
+  .clients .clientsWrapper .clientContent {
+    height: auto;
+    margin-top: 40px !important;
+    margin-bottom: 30px !important;
+    flex-direction: column-reverse;
+  }
+  .clients .clientsWrapper .clientContent p {
+    font-size: 16px;
+    line-height: 37px;
+    width: auto;
+    margin-bottom: 40px;
+  }
+  .clients .clientsWrapper .clientContent .clientContentWrapper {
+    flex-direction: row;
+    align-items: center;
+  }
+  .clients .clientsWrapper .clientContent .clientContentWrapper img {
+    margin-right: 20px;
+  }
+  .clients .clientsWrapper .clientContent .clientContentWrapper .clientInfo {
+    margin-top: 0px;
+  }
+  .featured .featuredWrapper {
+    width: auto;
+    max-width: 540px;
+    padding: 70px 20px;
+  }
+  .featured .featuredWrapper .featuredHeader {
+    font-size: 40px;
+    line-height: 49px;
+  }
+  .featured .featuredWrapper .featuredImg {
+    height: 300px;
+    width: auto;
+  }
+  .featured .featuredWrapper .featuredContent {
+    width: auto;
+    justify-content: center;
+  }
+  .featured .featuredWrapper .featuredContent .featuredContentWrapper {
+    width: auto;
+  }
+  .featured .featuredWrapper .featuredContent .featuredContentWrapper p {
+    width: 320px;
+  }
+  .featured .featuredWrapper .featuredContent .featuredContentWrapper h3 {
+    width: 320px;
+  }
+  .awards .awardsWrapper {
+    width: auto;
+    max-width: 540px;
+    padding: 70px 20px;
+    flex-wrap: wrap;
+  }
+  .awards .awardsWrapper h2 {
+    font-size: 40px;
+    line-height: 49px;
+    margin-bottom: 46px;
+  }
+  .awards .awardsWrapper .awardsIcons {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .awards .awardsWrapper .awardsIcons .awardsIco {
+    margin: 0px 15px;
+    width: 75px;
+    height: 80px;
+  }
+  .services .servicesWrapper {
+    width: auto;
+    max-width: 540px;
+    padding: 70px 20px;
+    height: auto;
+  }
+  .services .servicesWrapper h2 {
+    font-size: 40px;
+    line-height: 49px;
+    margin-bottom: 60px;
+  }
+  .services .servicesWrapper .servicesContent {
+    width: auto;
+    align-items: center;
+  }
+  .services .servicesWrapper .servicesContent .servicesContentExample {
+    width: 335px;
+    height: auto;
+  }
+  .services .servicesWrapper .servicesContent .servicesContentExample a {
+    font-size: 18px;
+  }
+  .services .servicesWrapper .servicesContent .servicesContentExample .servicesActiveImg {
+    position: static;
+    width: 335px;
+    height: 280px;
+  }
+  .services .servicesWrapper .servicesContent .servicesContentExample .servicesActiveContent {
+    position: static;
+    padding: 0px;
+    width: 335px;
+  }
+  .services .servicesWrapper .servicesLink {
+    margin-top: 25px;
+  }
+  .footer .tellUs {
+    width: auto;
+    max-width: 540px;
+    padding: 70px 20px;
+  }
+  .footer .tellUs h2 {
+    font-size: 40px;
+    line-height: 49px;
+  }
+  .footer .tellUs .tellUsContent {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .footer .tellUs .tellUsContent .tellUsInfo p {
+    font-size: 16px;
+  }
+  .footer .tellUs .tellUsContent .tellUsInfo .dontLikeHide {
+    display: none !important;
+  }
+  .footer .tellUs .tellUsContent .tellUsForm {
+    margin-top: 50px;
+  }
+  .footer .tellUs .tellUsContent .tellUsForm .contactInfo {
+    flex-wrap: wrap;
+  }
+  .footer .tellUs .tellUsContent .tellUsForm .contactInfo .input {
+    width: min(100%, 335px);
+  }
+  .footer .tellUs .tellUsContent .tellUsForm .textareaWrapper {
+    display: flex;
+  }
+  .footer .tellUs .tellUsContent .tellUsForm .textareaWrapper .input_textarea {
+    width: min(100%, 335px);
+  }
+  .footer .tellUs .tellUsContent .dontLikeHide {
+    display: block;
+  }
+  .footer .tellUs .tellUsContent .dontLikeHide h4 {
+    margin-top: 50px;
+  }
+  .footer .footerContent {
+    padding: 0 !important;
+  }
+  .footer .footerContent .footerContentWrapper {
+    padding: 0px 20px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    width: auto;
+    max-width: 540px;
+  }
+  .footer .footerContent .footerContentWrapper .footerNav {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+  }
+  .footer .footerContent .footerContentWrapper .footerNav .navsWrapper {
+    flex-wrap: wrap;
+  }
+  .footer .footerContent .footerContentWrapper .footerNav .navsWrapper .logo {
+    margin-right: 10px;
+    margin-bottom: 60px;
+    width: 100px;
+    height: 42px;
+  }
+  .footer .footerContent .footerContentWrapper .footerNav .navsWrapper .navMenu2 {
+    width: 210px;
+    margin-left: 10px;
+  }
+  .footer .footerContent .footerContentWrapper .footerNav .navsWrapper .socialLinksContainer {
+    display: none;
+  }
+  .footer .footerContent .footerContentWrapper .footerNav .navsWrapper .socialLinksContainerMobile {
+    display: block;
+    width: 175px;
+    margin-left: 115px;
+  }
+  .footer .footerContent .footerContentWrapper .latestInBlog .latestSlider .second {
+    display: none;
+  }
+  .footer .footerContent .footerContentWrapper .latestInBlog .latestSlider .first {
+    width: 100%;
+  }
+  .footer .footerContent .footerContentWrapper .latestInBlog .latestSlider .SliderButtonLeft {
+    display: none;
+  }
+  .footer .footerContent .footerContentWrapper .latestInBlog .latestSlider .SliderButtonRight {
+    display: none;
+  }
+  .footer .footerContent .footerContentWrapper .NavRectangles {
+    display: flex;
+  }
+}
+@media (max-width: 440px) {
+  .footer .footerContent .footerContentWrapper .footerNav .navsWrapper .socialLinksContainerMobile {
     margin-left: 0px;
   }
 }
